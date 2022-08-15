@@ -2,7 +2,6 @@ import type { NextPage } from 'next';
 
 import { Container, Typography, Box } from '@mui/material';
 
-import { Navbar } from '../src/components/Navbar';
 import Link from '../src/components/Link';
 
 const Home: NextPage = () => {
@@ -18,7 +17,7 @@ const Home: NextPage = () => {
         }}
       >
         <Typography variant="h4" component="h1" gutterBottom>
-          MUI v5 + Next.js + PWA with TypeScript example
+          Index Page
         </Typography>
         <Link href="/about" color="secondary">
           Go to the about page
