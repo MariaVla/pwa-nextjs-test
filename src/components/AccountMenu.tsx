@@ -29,13 +29,13 @@ export function AccountMenu() {
           display: 'flex',
           alignItems: 'center',
           textAlign: 'center',
-          justifyContent: 'center',
+          justifyContent: 'flex-end',
           padding: '0.5rem',
           background: theme.palette.primary.main,
         }}
       >
-        <Typography sx={{ minWidth: 100 }}>Contact</Typography>
-        <Typography sx={{ minWidth: 100 }}>Profile</Typography>
+        {/* <Typography sx={{ minWidth: 100 }}>Contact</Typography>
+        <Typography sx={{ minWidth: 100 }}>Profile</Typography> */}
         <Tooltip title="Account settings">
           <IconButton
             onClick={handleClick}
