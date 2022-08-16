@@ -1,10 +1,12 @@
 import { BottomNavigation, BottomNavigationAction, Paper } from '@mui/material';
 
-import RestoreIcon from '@mui/icons-material/Restore';
+import HomeIcon from '@mui/icons-material/Home';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { useState } from 'react';
 import theme from '../theme';
+import Link from './Link';
+import Home from '../../pages/index';
 
 export const NavbarFixed = () => {
   const [value, setValue] = useState(0);
@@ -26,9 +28,21 @@ export const NavbarFixed = () => {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
+        <BottomNavigationAction
+          label="Home"
+          value="/"
+          href="/"
+          component={Link}
+          icon={<HomeIcon />}
+        />
         <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-        <BottomNavigationAction label="Location" icon={<LocationOnIcon />} />
+        <BottomNavigationAction
+          label="Location"
+          value="/location"
+          href="/location"
+          component={Link}
+          icon={<LocationOnIcon />}
+        />
       </BottomNavigation>
     </Paper>
   );

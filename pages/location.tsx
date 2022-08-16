@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Link from '../src/components/Link';
 
-const About: NextPage = () => {
+const Location: NextPage = () => {
   return (
     <Container maxWidth="lg">
       <Box
@@ -19,7 +19,7 @@ const About: NextPage = () => {
         }}
       >
         <Typography variant="h4" component="h1" gutterBottom>
-          About Page
+          Location Page
         </Typography>
         {/* <Box maxWidth="sm">
           <Button variant="contained" component={Link} noLinkStyle href="/">
@@ -31,4 +31,4 @@ const About: NextPage = () => {
   );
 };
 
-export default About;
+export default Location;
