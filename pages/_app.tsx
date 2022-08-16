@@ -6,7 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider, EmotionCache } from '@emotion/react';
 import theme from '../src/theme';
 import createEmotionCache from '../src/createEmotionCache';
-import { NavbarFixed } from '../src/components/NavBarFixed';
+import { NavbarFixed } from '../src/components/NavbarFixed';
 import { AccountMenu } from '../src/components/AccountMenu';
 
 // Client-side cache, shared for the whole session of the user in the browser.
